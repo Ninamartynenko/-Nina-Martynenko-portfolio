@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kyiv, Dragomirova – Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1c1c1c;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    /* Adaptive responsive grid */
+    #lightgallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    #lightgallery a {
+      display: block;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    #lightgallery a:hover {
+      transform: translateY(-5px);
+    }
+    #lightgallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Override lightGallery thumbnail border to grey */
+    .lg-thumb .lg-thumb-item {
+      border: 2px solid transparent;
+    }
+    .lg-thumb .lg-thumb-item:hover,
+    .lg-thumb .lg-thumb-item.active {
+      border-color: #888888 !important;
+    }
+
+    @media (max-width: 600px) {
+      #lightgallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nina Martynenko</h1>
+    <p>Interior Designer / Architect</p>
+    <p>📞 +380 63 801 14 66 | ✉️ ninademchenkodesign@gmail.com</p>
+  </header>
+  <main>
+    <h2>Project: Kyiv, Dragomirova </h2>
+    <div id="lightgallery">
+      <a href="IMG_0618.JPG"><img src="IMG_0618.JPG" alt="Kitchen"</a>
+      <a href="IMG_0617.JPG"><img src="IMG_0617.JPG" alt="Kitchen"</a>
+      <a href="IMG_0616.JPG"><img src="IMG_0616.JPG" alt="Kitchen"</a>
+      <a href="IMG_0619.JPG"><img src="IMG_0619.JPG" alt="Kitchen"</a>
+      <a href="IMG_0620.JPG"><img src="IMG_0620.JPG" alt="Hall"</a>
+      <a href="IMG_0547.JPG"><img src="IMG_0547.JPG" alt="Bathroom"</a>
+      <a href="IMG_0548.JPG"><img src="IMG_0548.JPG" alt="Bathroom"</a>
+      <a href="IMG_0622.JPG"><img src="IMG_0622.JPG" alt="Cabinet"</a>
+      <a href="IMG_0623.JPG"><img src="IMG_0623.JPG" alt="Cabinet"</a>
+      <a href="IMG_0624.JPG"><img src="IMG_0624.JPG" alt="Cabinet"</a>
+      <a href="IMG_0625.JPG"><img src="IMG_0625.JPG" alt="Cabinet"</a>
+          <a href="IMG_0496.JPG"><img src="IMG_0496.JPG" alt="Toilet"</a>
+          <a href="IMG_0495.JPG"><img src="IMG_0495.JPG" alt="Toilet"</a>
+          <a href="IMG_0337.JPG"><img src="IMG_0337.JPG" alt="Bedroom"</a>
+          <a href="IMG_0338.JPG"><img src="IMG_0338.JPG" alt="Bedroom"</a>
+          <a href=" IMG_0333.JPG"><img src=" IMG_0333.JPG" alt="Bedroom"</a>
+          <a href=" IMG_0336.JPG"><img src=" IMG_0336.JPG" alt="Bedroom"</a>
+          <a href=" IMG_0445.JPG"><img src=" IMG_0445.JPG" alt="Wardrobe"</a>
+          <a href="IMG_0447.JPG"><img src="IMG_0447.JPG" alt="Wardrobe"</a>
+          <a href="IMG_0446.JPG"><img src="IMG_0446.JPG" alt="Wardrobe"</a>
+                 
+              
+              
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+  <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      speed: 500,
+      plugins: [lgZoom, lgThumbnail],
+      thumbnail: true
+    });
+  </script>
+</body>
+</html>

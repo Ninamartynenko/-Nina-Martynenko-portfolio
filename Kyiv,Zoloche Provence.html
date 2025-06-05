@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kyiv, Zoloche Provence – Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1c1c1c;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    /* Adaptive responsive grid */
+    #lightgallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    #lightgallery a {
+      display: block;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    #lightgallery a:hover {
+      transform: translateY(-5px);
+    }
+    #lightgallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Override lightGallery thumbnail border to grey */
+    .lg-thumb .lg-thumb-item {
+      border: 2px solid transparent;
+    }
+    .lg-thumb .lg-thumb-item:hover,
+    .lg-thumb .lg-thumb-item.active {
+      border-color: #888888 !important;
+    }
+
+    @media (max-width: 600px) {
+      #lightgallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nina Martynenko</h1>
+    <p>Interior Designer / Architect</p>
+    <p>📞 +380 63 801 14 66 | ✉️ ninademchenkodesign@gmail.com</p>
+  </header>
+  <main>
+    <h2>Project: Kyiv, Zoloche Provence</h2>
+    <div id="lightgallery">
+      <a href="IMG_8564.JPG"><img src="IMG_8564.JPG" alt="Hall"</a>
+      <a href="IMG_8563-1.jpg"><img src="IMG_8563-1.jpg" alt="Hall"</a>
+          <a href="IMG_8556.JPG"><img src="IMG_8556.JPG" alt="Hall"</a>
+          <a href="IMG_8557.JPG"><img src="IMG_8557.JPG" alt="Hall"</a>
+      <a href="IMG_8562.JPG"><img src="IMG_8562.JPG" alt="Studio"</a>
+      <a href="IMG_8561-1.jpg"><img src="IMG_8561-1.jpg" alt="Studio"</a>
+      <a href="IMG_8558-1.jpg"><img src="IMG_8558-1.jpg" alt="Kitchen"</a>
+      <a href="IMG_8559.JPG"><img src="IMG_8559.JPG" alt="Kitchen"</a>
+      <a href="IMG_8560-1.jpg"><img src="IMG_8560-1.jpg" alt="Kitchen"</a>
+      <a href="IMG_8568 (1).JPG"><img src="IMG_8568 (1).JPG" alt="Hall"</a>
+          <a href="IMG_8567 (1).JPG"><img src="IMG_8567 (1).JPG" alt="Hall"</a>
+       <a href="IMG_8539 (2).JPG"><img src="IMG_8539 (2).JPG" alt="Bathroom"</a>
+       <a href="IMG_8538-1.jpg"><img src="IMG_8538-1.jpg" alt="Bathroom"</a>
+       <a href="IMG_8553-1.jpg"><img src="IMG_8553-1.jpg" alt="Bedroom"</a>
+       <a href="IMG_8554-1.jpg"><img src="IMG_8554-1.jpg" alt="Bedroom"</a>
+       <a href="IMG_8555-1.jpg"><img src="IMG_8555-1.jpg" alt="Bedroom"</a>
+       <a href="15.jpg"><img src="15.jpg" alt="Guest room"</a>
+       <a href=" IMG_8545-1.jpg"><img src=" IMG_8545-1.jpg" alt="Guest room"</a>
+           <a href=" IMG_8540-1-1 copy.jpg"><img src="IMG_8540-1-1 copy.jpg" alt="Bathroom"</a>
+               <a href="IMG_8543 (1).JPG"><img src="IMG_8543 (1).JPG" alt="Bathroom"</a>
+            
+           
+           
+                      
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+  <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      speed: 500,
+      plugins: [lgZoom, lgThumbnail],
+      thumbnail: true
+    });
+  </script>
+</body>
+</html>

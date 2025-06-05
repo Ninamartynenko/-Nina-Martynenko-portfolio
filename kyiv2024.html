@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kyiv 2024 – Project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1c1c1c;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    /* Adaptive responsive grid */
+    #lightgallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    #lightgallery a {
+      display: block;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    #lightgallery a:hover {
+      transform: translateY(-5px);
+    }
+    #lightgallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Override lightGallery thumbnail border to grey */
+    .lg-thumb .lg-thumb-item {
+      border: 2px solid transparent;
+    }
+    .lg-thumb .lg-thumb-item:hover,
+    .lg-thumb .lg-thumb-item.active {
+      border-color: #888888 !important;
+    }
+
+    @media (max-width: 600px) {
+      #lightgallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nina Martynenko</h1>
+    <p>Interior Designer / Architect</p>
+    <p>📞 +380 63 801 14 66 | ✉️ ninademchenkodesign@gmail.com</p>
+  </header>
+  <main>
+    <h2>Project: Kyiv 2024</h2>
+    <div id="lightgallery">
+      <a href="V1.jpg"><img src="V1.jpg" alt="Kitchen"></a>
+      <a href="V2.jpg"><img src="V2.jpg" alt="Kitchen"></a>
+      <a href="V3.jpg"><img src="V3.jpg" alt="Kitchen"></a>
+      <a href="V4.jpg"><img src="V4.jpg" alt="Kitchen"></a>
+      <a href="V5.jpg"><img src="V5.jpg" alt="Kitchen"></a>
+      <a href="V6.jpg"><img src="V6.jpg" alt="Kitchen"></a>
+      <a href="V7.jpg"><img src="V7.jpg" alt="Kitchen"></a>
+      <a href="V8.jpg"><img src="V8.jpg" alt="Kitchen"></a>
+      <a href="V9.jpg"><img src="V9.jpg" alt="Kitchen"></a>
+      <a href="V10.jpg"><img src="V10.jpg" alt="Kitchen"></a>
+      <a href="V11.jpg"><img src="V11.jpg" alt="Kitchen"></a>
+      <a href="C1.jpg"><img src="C1.jpg" alt="Bathroom"></a>
+      <a href="C2.jpg"><img src="C2.jpg" alt="Bathroom"></a>
+      <a href="C3.jpg"><img src="C3.jpg" alt="Bathroom"></a>
+      <a href="C4.jpg"><img src="C4.jpg" alt="Bathroom"></a>
+      <a href="D1.jpg"><img src="D1.jpg" alt="Child's room"></a>
+      <a href="D2.jpg"><img src="D2.jpg" alt="Child's room"></a>
+      <a href="D3.jpg"><img src="D3.jpg" alt="Child's room"></a>
+      <a href="D4.jpg"><img src="D4.jpg" alt="Child's room"></a>
+      <a href="D5.jpg"><img src="D5.jpg" alt="Child's room"></a>
+      <a href="D6.jpg"><img src="D6.jpg" alt="Child's room"></a>
+      <a href="D7.jpg"><img src="D7.jpg" alt="Child's room"></a>
+      <a href="D8.jpg"><img src="D8.jpg" alt="Child's room"></a>
+      <a href="S1.jpg"><img src="S1.jpg" alt="Bedroom"></a>
+      <a href="S2.jpg"><img src="S2.jpg" alt="Bedroom"></a>
+      <a href="S3.jpg"><img src="S3.jpg" alt="Bedroom"></a>
+      <a href="S4.jpg"><img src="S4.jpg" alt="Bedroom"></a>
+      <a href="S5.jpg"><img src="S5.jpg" alt="Bedroom"></a>
+      <a href="S6.jpg"><img src="S6.jpg" alt="Bedroom"></a>
+      <a href="S7.jpg"><img src="S7.jpg" alt="Bedroom"></a>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+  <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      speed: 500,
+      plugins: [lgZoom, lgThumbnail],
+      thumbnail: true
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# HTTP caching
+*.html~
+
+# Node.js / VSCode / Mac OS / Windows / інші тимчасові
+node_modules/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
